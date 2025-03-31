@@ -24,27 +24,30 @@ const ContactForm: React.FC = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success(
-        language === 'de' 
-          ? 'Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.' 
-          : 'Thank you for your message! We will get back to you shortly.'
-      );
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: '',
+  
+    try {
+      const response = await fetch('https://formspree.io/f/mzzeaowr', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       });
-      setIsSubmitting(false);
-    }, 1000);
+  
+      if (response.ok) {
+        toast.success(language === 'de' ? 'Vielen Dank für Ihre Nachricht!' : 'Thank you for your message!');
+        setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+      } else {
+        toast.error(language === 'de' ? 'Nachricht konnte nicht gesendet werden.' : 'Failed to send message.');
+      }
+    } catch (err) {
+      toast.error(language === 'de' ? 'Fehler beim Senden der Nachricht.' : 'Error sending message.');
+    }
+  
+    setIsSubmitting(false);
   };
+  
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">

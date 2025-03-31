@@ -1,15 +1,14 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { footerTranslations, getTranslation } from '@/utils/translations';
-import { Mail, Send } from 'lucide-react';
+import { Send } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
 const Footer: React.FC = () => {
   const { language } = useLanguage();
-  
+
   return (
     <footer className="bg-ftbeck-anthracite text-white">
       <div className="container-custom py-12">
@@ -28,7 +27,8 @@ const Footer: React.FC = () => {
             <p>
               <span className="font-medium">
                 {getTranslation(footerTranslations, 'phoneLabel', language)}:
-              </span> +49 123 456 7890
+              </span>{' '}
+              +49 123 456 7890
             </p>
           </div>
 
@@ -39,26 +39,17 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link 
-                  to="#" 
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
+                <Link to="#" className="text-gray-300 hover:text-white transition-colors">
                   {getTranslation(footerTranslations, 'careAndInstallation', language)}
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="#" 
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
+                <Link to="#" className="text-gray-300 hover:text-white transition-colors">
                   {getTranslation(footerTranslations, 'productPerformancePass', language)}
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="#" 
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
+                <Link to="#" className="text-gray-300 hover:text-white transition-colors">
                   {getTranslation(footerTranslations, 'catalog', language)}
                 </Link>
               </li>
@@ -72,18 +63,12 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link 
-                  to="#" 
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
+                <Link to="#" className="text-gray-300 hover:text-white transition-colors">
                   {getTranslation(footerTranslations, 'privacyPolicy', language)}
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="#" 
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
+                <Link to="#" className="text-gray-300 hover:text-white transition-colors">
                   {getTranslation(footerTranslations, 'imprint', language)}
                 </Link>
               </li>
@@ -96,8 +81,8 @@ const Footer: React.FC = () => {
               {getTranslation(footerTranslations, 'newsletter', language)}
             </h3>
             <div className="flex">
-              <Input 
-                type="email" 
+              <Input
+                type="email"
                 placeholder={getTranslation(footerTranslations, 'newsletterPlaceholder', language)}
                 className="bg-gray-700 text-white border-gray-600 rounded-r-none focus-visible:ring-ftbeck-blue"
               />
@@ -112,6 +97,18 @@ const Footer: React.FC = () => {
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
           <p>
             {getTranslation(footerTranslations, 'copyright', language)}
+          </p>
+          <p>
+            Powered by{' '}
+            <a
+              id="powered-by"
+              href="https://bytetech-kosovo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-white hover:text-blue-500"
+            >
+              ByteTech
+            </a>  
           </p>
         </div>
       </div>

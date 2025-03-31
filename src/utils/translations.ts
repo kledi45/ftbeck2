@@ -287,8 +287,8 @@ export const footerTranslations: Translations = {
     en: 'Subscribe',
   },
   copyright: {
-    de: '© 2023 F&T Beck GmbH. Alle Rechte vorbehalten.',
-    en: '© 2023 F&T Beck GmbH. All rights reserved.',
+    de: '© 2025 F&T Beck GmbH. Alle Rechte vorbehalten.',
+    en: '© 2025 F&T Beck GmbH. All rights reserved.',
   },
 };
 
