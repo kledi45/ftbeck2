@@ -37,8 +37,8 @@ const Contact: React.FC = () => {
                     <p className="font-medium mb-1">
                       {getTranslation(contactTranslations, 'emailLabel', language)}
                     </p>
-                    <a href="mailto:info@ftbeck.de" className="text-gray-300 hover:text-white transition-colors">
-                      info@ftbeck.de
+                    <a href="mailto:info@ftbeck.com" className="text-gray-300 hover:text-white transition-colors">
+                      info@ftbeck.com
                     </a>
                   </div>
                 </div>
