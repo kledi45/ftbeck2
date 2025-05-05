@@ -39,7 +39,7 @@ const Header: React.FC = () => {
   }, [location.pathname]);
 
   const navItems = [
-    { label: getTranslation(navTranslations, 'home', language), path: '/' },
+    { label: getTranslation(navTranslations, 'home', language), path: '/ftbeck2' },
     { label: getTranslation(navTranslations, 'about', language), path: '/about' },
     { label: getTranslation(navTranslations, 'contact', language), path: '/contact' },
   ];
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
     >
       <div className="container-custom flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
+        <Link to="/ftbeck2/" className="flex items-center space-x-2">
           <Logo />
           <span className="font-bold text-xl text-ftbeck-anthracite">F&T Beck GmbH</span>
         </Link>

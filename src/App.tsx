@@ -11,7 +11,8 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/NotFound";
-
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import Imprint from "@/pages/Imprint";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -25,9 +26,12 @@ const App = () => (
             <Header />
             <main className="flex-grow">
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/ftbeck2" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/imprint" element={<Imprint />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>

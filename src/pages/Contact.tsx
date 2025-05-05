@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
                       {getTranslation(contactTranslations, 'addressLabel', language)}
                     </p>
                     <p className="text-gray-300">
-                      Steinbisstraße 3, <br />
+                      Steinbisstraße 3 <br />
                       73061 Ebersbach an der Fils
                     </p>
                   </div>

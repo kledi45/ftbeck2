@@ -147,8 +147,8 @@ export const aboutTranslations: Translations = {
     en: 'About Us',
   },
   mainText: {
-    de: 'Seit über zwei Jahrzehnten steht F&T Beck GmbH für Qualität, Vertrauen und technische Perfektion im Fenster- und Türenbau. Unser familiengeführtes Unternehmen kombiniert deutsche Ingenieurskunst mit einer starken Kundenorientierung und bietet Komplettlösungen für Neubauten, Renovierungen und gewerbliche Projekte.',
-    en: 'For over two decades, F&T Beck GmbH has stood for quality, trust and technical perfection in window and door construction. Our family-run company combines German engineering with a strong customer focus and offers complete solutions for new buildings, renovations and commercial projects.',
+    de: 'Seit über zwei Jahrzehnten steht die F&T Beck GmbH, ein familiengeführtes Unternehmen, für Qualität, Vertrauen und technische Perfektion im Fenster- und Türenbau. Unser Familienbetrieb vereint deutsche Ingenieurskunst mit ausgeprägter Kundenorientierung und bietet Komplettlösungen für Neubauten, Sanierungen und gewerbliche Projekte.',
+    en: 'For over two decades, F&T Beck GmbH  a family run business, has stood for quality, trust and technical perfection in window and door construction. Our family-run company combines German engineering with a strong customer focus and offers complete solutions for new buildings, renovations and commercial projects.',
   },
   strengthsTitle: {
     de: 'Unsere Stärken im Überblick',
@@ -231,8 +231,8 @@ export const contactTranslations: Translations = {
     en: 'Address',
   },
   openingHours: {
-    de: 'Öffnungszeiten: Mo–Fr: 08:00–17:00 Uhr',
-    en: 'Opening Hours: Mon–Fri: 08:00–17:00',
+    de: 'Öffnungszeiten: Mo–Fr: 09:00–17:00 Uhr',
+    en: 'Opening Hours: Mon–Fri: 09:00–17:00',
   },
 };
 
@@ -243,8 +243,12 @@ export const footerTranslations: Translations = {
     en: 'F&T Beck GmbH',
   },
   address: {
-    de: 'Steinbisstraße 3, 73061 Ebersbach an der Fils',
-    en: 'Steinbisstraße 3, 73061 Ebersbach an der Fils',
+    de: 'Steinbisstraße 3',
+    en: 'Steinbisstraße 3',
+  },
+  additionalAddress: {
+    de: '73061 Ebersbach an der Fils',
+    en: " 73061 Ebersbach an der Fils"
   },
   downloads: {
     de: 'Downloads',
@@ -290,6 +294,10 @@ export const footerTranslations: Translations = {
     de: '© 2025 F&T Beck GmbH. Alle Rechte vorbehalten.',
     en: '© 2025 F&T Beck GmbH. All rights reserved.',
   },
+  phoneLabel: {
+    de: 'Telefon',
+    en: 'Phone',
+  },  
 };
 
 // Create a context for the language

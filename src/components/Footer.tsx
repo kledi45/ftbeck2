@@ -22,7 +22,10 @@ const Footer: React.FC = () => {
               {getTranslation(footerTranslations, 'address', language)}
             </p>
             <p className="mb-2">
-              <span className="font-medium">Email:</span> info@ftbeck.de
+              {getTranslation(footerTranslations, 'additionalAddress', language)}
+            </p>
+            <p className="mb-2">
+              <span className="font-medium">Email:</span> info@ftbeck.com
             </p>
             <p>
               <span className="font-medium">
@@ -39,17 +42,17 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="https://drive.google.com/file/d/1-oET0MX4SUSO75yLkdofhAsZwUpH0zDq/view?usp=drive_link" target='_blank' className="text-gray-300 hover:text-white transition-colors">
                   {getTranslation(footerTranslations, 'careAndInstallation', language)}
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="https://drive.google.com/file/d/1DT6pxgO3X00pYBFCOrkTMBlzPi_h0Isb/view?usp=sharing" target='_blank' className="text-gray-300 hover:text-white transition-colors">
                   {getTranslation(footerTranslations, 'productPerformancePass', language)}
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="https://drive.google.com/file/d/1e78rJgpDjQRIJhcTPcUQTJZbYSqxGwxY/view?usp=sharing" target='_blank' className="text-gray-300 hover:text-white transition-colors">
                   {getTranslation(footerTranslations, 'catalog', language)}
                 </Link>
               </li>
@@ -63,12 +66,12 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
                   {getTranslation(footerTranslations, 'privacyPolicy', language)}
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link to="/imprint" className="text-gray-300 hover:text-white transition-colors">
                   {getTranslation(footerTranslations, 'imprint', language)}
                 </Link>
               </li>
